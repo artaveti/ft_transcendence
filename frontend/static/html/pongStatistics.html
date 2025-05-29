@@ -1,0 +1,90 @@
+<div class="min-h-screen flex flex-col items-center justify-center bg-gray-950 py-10">
+	<div class="w-full max-w-4xl bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 p-8">
+	  <!-- Title -->
+	  <div class="text-center mb-3">
+		<p class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-lg mb-2" animated-letters data-translate="pong statistics">
+		  pong statistics
+		</p>
+		<div class="flex justify-center mt-4 mb-4">
+		  <hr class="border-white w-96" />
+		</div>
+	  </div>
+  
+	  <!-- Global Table -->
+	  <div class="flex justify-center mb-3">
+		<div class="overflow-x-auto rounded-xl border border-white/10 shadow w-full max-w-xl bg-gray-900/60">
+		  <table class="min-w-full text-white text-center" id="pong-global-stat-table">
+			<thead>
+			  <tr>
+				<th class="py-2 px-4 font-semibold" data-translate="total games">total games</th>
+				<th class="py-2 px-4 font-semibold" data-translate="total duration">total duration</th>
+				<!-- <th class="py-2 px-4 font-semibold" data-translate="average duration">average duration</th> -->
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td class="py-2 px-4">10</td>
+				<td class="py-2 px-4">00:10:00</td>
+				<td class="py-2 px-4">01:00</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+	  </div>
+  
+	  <!-- Main Table -->
+	  <div class="flex justify-center mb-3">
+		<div class="overflow-x-auto rounded-xl border border-white/10 shadow w-full max-w-3xl bg-gray-900/60">
+		  <table class="min-w-full text-white text-center" id="pong-stat-table">
+			<thead>
+			  <tr>
+				<th class="py-2 px-3 font-semibold" data-translate="db date">Date</th>
+				<th class="py-2 px-3 font-semibold" data-translate="db player 1">Player 1</th>
+				<th class="py-2 px-3 font-semibold" data-translate="db player 2">Player 2</th>
+				<th class="py-2 px-3 font-semibold" data-translate="db score">Score</th>
+				<th class="py-2 px-3 font-semibold" data-translate="db winner">Winner</th>
+				<th class="py-2 px-3 font-semibold" data-translate="db duration">Duration</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td class="py-2 px-3">2021-10-01</td>
+				<td class="py-2 px-3">user</td>
+				<td class="py-2 px-3">noobman</td>
+				<td class="py-2 px-3">10-5</td>
+				<td class="py-2 px-3">noobman</td>
+				<td class="py-2 px-3">02:10</td>
+			  </tr>
+			  <!-- More rows dynamically -->
+			</tbody>
+		  </table>
+		</div>
+	  </div>
+  
+	  <!-- Switcher Buttons -->
+	  <div class="flex flex-wrap gap-4 justify-center mb-3">
+		<button class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 hover:from-indigo-400 hover:to-pink-400 text-white font-semibold px-6 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg"
+				id="pvp-stat-btn" data-translate="pvp data" aria-pressed="true">
+		  pvp data
+		</button>
+		<button class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 hover:from-indigo-400 hover:to-pink-400 text-white font-semibold px-6 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg"
+				id="ai-stat-btn" data-translate="ai data" aria-pressed="false">
+		  ai data
+		</button>
+		<button class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 hover:from-indigo-400 hover:to-pink-400 text-white font-semibold px-6 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg"
+				id="tournament-stat-btn" data-translate="tournament data" aria-pressed="false">
+		  tournament data
+		</button>
+	  </div>
+	</div>
+  
+	<!-- Return Button -->
+	<a role="button"
+	   class="inline-flex items-center justify-center px-4 py-2 bg-black/50 hover:bg-black/70 text-white rounded-xl shadow mt-3 transition duration-200"
+	   href="/profile"
+	   data-link>
+	  <img src="static/assets/UI/icons/left_arrow.svg" alt="return button" id="left-arrow" class="h-6 w-6 mr-2">
+	  <span class="text-white">Return</span>
+	</a>
+  </div>
+  

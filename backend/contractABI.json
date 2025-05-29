@@ -1,0 +1,62 @@
+[
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "id", "type": "uint256" },
+      { "internalType": "string", "name": "player_one", "type": "string" },
+      { "internalType": "string", "name": "player_two", "type": "string" },
+      { "internalType": "string", "name": "player_three", "type": "string" },
+      { "internalType": "string", "name": "player_four", "type": "string" },
+      { "internalType": "string", "name": "winner", "type": "string" },
+      { "internalType": "uint256", "name": "duration", "type": "uint256" },
+      { "internalType": "string", "name": "date", "type": "string" },
+      { "internalType": "uint256", "name": "user_id", "type": "uint256" }
+    ],
+    "name": "recordMatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllMatches",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "uint256", "name": "id", "type": "uint256" },
+          { "internalType": "string", "name": "player_one", "type": "string" },
+          { "internalType": "string", "name": "player_two", "type": "string" },
+          { "internalType": "string", "name": "player_three", "type": "string" },
+          { "internalType": "string", "name": "player_four", "type": "string" },
+          { "internalType": "string", "name": "winner", "type": "string" },
+          { "internalType": "uint256", "name": "duration", "type": "uint256" },
+          { "internalType": "string", "name": "date", "type": "string" },
+          { "internalType": "uint256", "name": "user_id", "type": "uint256" }
+        ],
+        "internalType": "struct TournamentScores.Match[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMatchCount",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "uint256", "name": "id", "type": "uint256" },
+      { "indexed": false, "internalType": "string", "name": "winner", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "user_id", "type": "uint256" }
+    ],
+    "name": "MatchRecorded",
+    "type": "event"
+  }
+]

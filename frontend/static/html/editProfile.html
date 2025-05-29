@@ -1,0 +1,71 @@
+<div class="min-h-screen flex flex-col items-center justify-center p-10">
+	<div class="p-8 bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-md border border-white/10 container-edit glass">
+	  <!-- Title -->
+	  <h1 class="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500
+				 text-transparent bg-clip-text
+				 text-3xl sm:text-4xl md:text-5xl
+				 font-extrabold tracking-wider
+				 text-center leading-[1.15] mb-3 mt-2 pb-3 drop-shadow-lg"
+		  animated-letters data-translate="edit-profile">
+		editProfile
+	  </h1>
+	  <hr class="border-gray-700 mb-6">
+  
+	  <!-- Avatar Image -->
+	  <div class="flex flex-col items-center mb-6">
+		<img src="static/assets/images/profile_pic_transparent.png"
+			 alt="profile picture"
+			 class="profile-pic glass w-24 h-24 rounded-full border-2 border-cyan-400 object-cover mb-3"
+			 id="avatar"
+			 accept="image/*">
+		<label for="avatar-input" class="text-white text-sm mb-1" data-translate="profile-picture">profile picture:</label>
+		<input type="file" class="form-control text-center text-input file:bg-cyan-700 file:text-white file:rounded file:px-3 file:py-1" id="avatar-input" accept="image/*">
+		<small class="text-red-500 mt-1" id="avatar-error">&nbsp;</small>
+	  </div>
+  
+	  <!-- Username -->
+	  <div class="mb-5 hidden">
+		<label for="username" class="text-white block mb-1" data-translate="username">username:</label>
+		<input type="text"
+			   class="form-control text-center text-input w-full p-2 bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+			   id="username" maxlength="15" data-translate="username">
+		<small class="text-red-500" id="username-error">&nbsp;</small>
+	  </div>
+  
+	  <!-- Email -->
+	  <div class="mb-5">
+		<label for="email" class="text-white block mb-1" data-translate="e-mail">email:</label>
+		<input type="text"
+			   class="form-control text-center text-input w-full p-2 bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+			   id="email" maxlength="30">
+		<small class="text-red-500" id="email-error">&nbsp;</small>
+	  </div>
+  
+	  <!-- Password -->
+	  <div class="mb-5 hidden">
+		<label for="password" class="text-white block mb-1" data-translate="password">password:</label>
+		<input type="password"
+			   class="form-control text-center text-input w-full p-2 bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+			   id="password" maxlength="64">
+		<small class="text-red-500" id="password-error">&nbsp;</small>
+	  </div>
+  
+	  <!-- Save Button -->
+	  <div class="flex justify-center mt-4">
+		<button class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 hover:from-indigo-400 hover:to-pink-400 text-white py-2 px-8 rounded-lg font-semibold shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 btn btn-lg btn-filled"
+				id="save-button"
+				data-translate="save">
+		  save
+		</button>
+	  </div>
+	</div>
+	<!-- Return Button -->
+	<a role="button"
+	   class="inline-flex items-center justify-center px-4 py-2 bg-black/50 hover:bg-black/70 text-white rounded-xl shadow mt-5 transition duration-200"
+	   href="/profile"
+	   data-link>
+	  <img src="static/assets/UI/icons/left_arrow.svg" alt="return button" id="left-arrow" class="h-6 w-6 mr-2">
+	  <span class="text-white">Return</span>
+	</a>
+  </div>
+  

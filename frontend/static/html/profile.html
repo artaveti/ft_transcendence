@@ -1,0 +1,58 @@
+<div class="min-h-screen flex flex-col items-center justify-center p-10" id="profile-page" style="display: none !important;">
+	<div class="p-8 bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-md border border-white/10 space-y-6 container-profile">
+	  <!-- Profile Title -->
+	  <h1 class="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500
+				  text-transparent bg-clip-text
+				  text-3xl sm:text-4xl md:text-5xl
+				  font-extrabold tracking-wider
+				  text-center leading-[1.15] mb-1 mt-2 pb-3 drop-shadow-lg"
+		   animated-letters data-translate="profile">profile</h1>
+  
+	  <hr class="border-gray-700 mb-2">
+  
+	  <!-- Avatar -->
+	  <div class="flex justify-center mb-3">
+		<img src="static/assets/images/profile_pic_transparent.png"
+			 alt="profile picture"
+			 class="profile-pic rounded-full border border-white/20 shadow"
+			 id="avatar" style="width: 120px; height: 120px;">
+	  </div>
+  
+	  <!-- Username -->
+	  <div class="flex flex-col items-center mb-2">
+		<h3 id="username-name" class="text-white text-xl font-semibold">user</h3>
+		<p id="username-email" class="text-gray-300 text-sm mt-1">user@gmail.com</p>
+	  </div>
+  
+	  <hr class="border-gray-700 mb-2">
+  
+	  <!-- Statistics -->
+	  <p class="text-white text-lg font-semibold mb-1" data-translate="statistics">statistics</p>
+	  <div class="flex justify-center gap-4 mb-4">
+		<a role="button" class="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-700 hover:from-purple-500 hover:to-indigo-600 text-white px-5 py-2 rounded-lg font-semibold shadow w-32 text-center btn-filled"
+		   href="/pong-statistics" data-link data-translate="pong">pong</a>
+	  </div>
+  
+	  <hr class="border-gray-700 mb-2">
+  
+	  <!-- Friends/Edit/Logout -->
+	  <div class="flex flex-col gap-3">
+		<a role="button" class="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 hover:from-cyan-400 hover:to-blue-400 text-white px-5 py-2 rounded-lg font-semibold shadow w-full text-center btn-filled"
+		   href="/friends" data-link data-translate="see-friends">see friends</a>
+		<a role="button" class="bg-gradient-to-r from-green-500 via-teal-600 to-cyan-700 hover:from-green-400 hover:to-cyan-500 text-white px-5 py-2 rounded-lg font-semibold shadow w-full text-center btn-filled"
+		   href="/edit-profile" data-link data-translate="edit-profile">edit profile</a>
+		<button class="bg-gradient-to-r from-red-600 via-pink-600 to-purple-700 hover:from-red-500 hover:to-pink-500 text-white px-5 py-2 rounded-lg font-semibold shadow w-full text-center btn-filled"
+				id="logout-button" data-translate="logout">log out</button>
+	  </div>
+	</div>
+  
+	<!-- Return Button -->
+	<a role="button"
+	   class="inline-flex items-center justify-center px-4 py-2 bg-black/50 hover:bg-black/70 text-white rounded-xl shadow mt-5 transition duration-200"
+	   href="/"
+	   data-link>
+	  <img src="static/assets/UI/icons/left_arrow.svg" alt="return button" id="left-arrow" class="h-6 w-6 mr-2">
+	  <span class="text-white">Return</span>
+	</a>
+  </div>
+  

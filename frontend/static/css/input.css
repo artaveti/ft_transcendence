@@ -1,0 +1,61 @@
+/* ==============================
+   TAILWIND BASE IMPORTS
+============================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==============================
+   FADE ANIMATIONS (Replaced with Tailwind)
+============================== */
+.fade-in {
+  @apply opacity-0 transition-opacity duration-500;
+}
+
+.fade-out {
+  @apply opacity-100 transition-opacity duration-500;
+}
+
+/* ==============================
+   FORM ELEMENTS
+============================== */
+.input-field {
+  @apply w-full p-2 bg-gray-800 text-white border border-gray-600 rounded-md 
+          focus:outline-none focus:ring-2 focus:ring-cyan-500 mb-4
+          focus-visible:ring-4 transition duration-300;
+}
+
+.input-error {
+  @apply text-red-500 text-sm mt-1;
+}
+
+.button-primary {
+  @apply w-full p-2 bg-indigo-600 text-white rounded-md 
+          hover:bg-indigo-700 hover:shadow-[0_0_10px_2px_rgba(79,70,229,0.5)]
+          focus:outline-none focus:ring-2 focus:ring-cyan-500 mt-4
+          focus-visible:ring-4 transition duration-300;
+}
+
+.error-message {
+  @apply text-center text-white bg-red-600 p-5 rounded-md shadow-md mt-4;
+}
+
+.success-message {
+  @apply text-center text-white bg-green-600 p-5 rounded-md shadow-md mt-4;
+}
+
+
+.text-glow {
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4), 0 0 10px rgba(0, 128, 255, 0.3);
+}
+
+
+
+.selected {
+  @apply ring-2 ring-cyan-400 shadow-cyan-500/30;
+}
+
+
+html {
+  overflow-y: scroll;
+}

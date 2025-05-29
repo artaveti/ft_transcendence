@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Google Sign-In</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    .g_id_signin {
+      min-height: 60px;
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Google Sign-In Page</h2>
+
+  <!-- Google Sign-In Button -->
+  <div class="g_id_signin"></div>
+
+  <pre id="tokenResult"></pre>
+  <pre id="serverResult"></pre>
+
+  <!-- Profile Link -->
+  <div class="flex justify-center text-gray-400">
+    <small class="light-text" data-translate="After Google Sign-in go to profile page by this link">After Google Sign-in go to profile page by this link</small>
+    <small>
+      <a href="/profile" class="text-cyan-400 hover:text-cyan-500 ml-1 sign" data-link data-translate="profile">
+        profile
+      </a>
+    </small>
+  </div>
+  </form>
+
+  <button id="getProfileBtn" class="hidden">Get Profile</button>
+  <pre id="profileResult"></pre>
+</body>
+</html>
+
